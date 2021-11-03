@@ -37,15 +37,15 @@ function filterData(searchTerm) {
 // });
 
 /*AHK */
-$('.chat-header .menu .menu-ico').click(function(){
-    $('.chat-header .menu ul.list').slideToggle('fast');
+$('.chat-header .header-menu .menu-ico').click(function(){
+    $('.chat-header .header-menu ul.list').slideToggle('fast');
 });
 
 $(document).click(function(){
-    $(".chat-header .menu ul.list").slideUp('fast');
+    $(".chat-header .header-menu ul.list").slideUp('fast');
 });
 
-$(".chat-header .menu ul.list,.chat-header .menu .menu-ico").click(function(e){
+$(".chat-header .header-menu ul.list,.chat-header .header-menu .menu-ico").click(function(e){
     e.stopPropagation();
 });
 
@@ -57,7 +57,7 @@ $(document).click(function(){
     $(".emoji-dashboard").slideUp('fast');
 });
 
-$(".chat-header .menu ul.list,.chat-inp .emoji").click(function(e){
+$(".chat-header .header-menu ul.list,.chat-inp .emoji").click(function(e){
     e.stopPropagation();
 });
 

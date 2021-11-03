@@ -1,119 +1,121 @@
-
 <!DOCTYPE html>
 <html lang="tr">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width-device-width, initial-scale=1.0">
-        <title>chatplatformu.net</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"><!--for icons-->
-        <!-- <script src="https://code.jquery.com/jquery-3.4.1.js"></script>for hamburger button -->
 
-        <!--AHK-->
-        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-      crossorigin="anonymous"
-    />
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>chatplatformu.net</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!--for icons-->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+    <!--AHK-->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
     <script src="https://use.fontawesome.com/aa95071b26.js"></script>
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet" />
-    </head>
-    <body>
-        <div class="total-menu">
-            <div class="menu">
-                <!--üç yatay çizgi ve ders programı-->
-                <div id="icons">
-                    <nav class="sidebar">
-                        <!-- <ul>
+</head>
+
+<body>
+    <div class="total-menu">
+        <div class="menu">
+            <!--üç yatay çizgi ve ders programı-->
+            <div id="icons">
+                <nav class="sidebar">
+                    <!-- <ul>
                             <li><a href="#">Profil</a></li>
                             <li><a href="#">Sohbet Başlat</a></li>
                             <li><a href="#">Yeni Grup Oluştur</a></li>
                             <li><a href="#">Çıkış</a></li>
                         </ul> -->
-                        <!--hamburger butonu-->
-                        <div class="menu-icons column">
-                            <div id="menu-icon"></div>
-                            <div id="menu-icon"></div>
-                            <div id="menu-icon"></div>
-                        </div>
-                    </nav>
-                    <!--ders programı-->
-                    <div class="column">
-                        <img src="image/book.png" alt="timetableimg">
+                    <!--hamburger butonu-->
+                    <div class="menu-icons column">
+                        <div id="menu-icon"></div>
+                        <div id="menu-icon"></div>
+                        <div id="menu-icon"></div>
                     </div>
-                </div>
-    
-                <!--search butonu-->
-                <div class="searchbutton">
-                    <input type="text" id="filter" placeholder="Ara">
-                    <!-- <img src="image/search.png" alt="searchbtn"> -->
-                </div>
-    
-                <!--sohbetler-gruplar-etkinlikler kısmı-->
-                <div class="chapters">
-                    <div class="chats">
-                        <a href="">Sohbetler</a>
-                    </div>
-                    <div class="groups">
-                        <a href="">Gruplar</a>
-                    </div>
-                    <div class="events">
-                        <a href="">Etkinlikler</a>
-                    </div>
-                </div>
-                <hr>
-    
-                <!--kişiler kısmı-sohbetler bölümü için-->
-                <div class="persons">
-                    <ul id="result" class="user-list">
-                        <li>
-                            <h3>Yükleniyor...</h3>
-                        </li>
-                    </ul>
+                </nav>
+                <!--ders programı-->
+                <div class="column">
+                    <img src="image/book.png" alt="timetableimg">
                 </div>
             </div>
-    
-            <!--AHK-->
-            <div class="chat-cont">
-                <div class="chat-header">
-                  <div class="photo"></div>
-                  <div class="name">
+
+            <!--search butonu-->
+            <div class="searchbutton">
+                <input type="text" id="filter" placeholder="Ara">
+                <!-- <img src="image/search.png" alt="searchbtn"> -->
+            </div>
+
+            <!--sohbetler-gruplar-etkinlikler kısmı-->
+            <div class="chapters">
+                <div class="chats">
+                    <a href="">Sohbetler</a>
+                </div>
+                <div class="groups">
+                    <a href="">Gruplar</a>
+                </div>
+                <div class="events">
+                    <a href="">Etkinlikler</a>
+                </div>
+            </div>
+            <hr>
+
+            <!--kişiler kısmı-sohbetler bölümü için-->
+            <div class="persons">
+                <ul id="result" class="user-list">
+                    <li>
+                        <h3>Yükleniyor...</h3>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--AHK-->
+        <div class="chat-cont">
+            <div class="chat-header">
+                <div class="photo"></div>
+                <div class="name">
                     <span>BRO</span>
-                  </div>
-                  <div class="menu">
+                </div>
+                <div class="header-menu">
                     <div class="burg-menu">
-                      <span class="menu-ico"></span>
-                      <ul class="list">
-                        <li>Sohbeti Sil</li>
-                        <li>Gruptan Çık</li>
-                      </ul>
+                        <span class="menu-ico"></span>
+                        <ul class="list">
+                            <li>Sohbeti Sil</li>
+                            <li>Gruptan Çık</li>
+                        </ul>
                     </div>
-                  </div>
                 </div>
-          
-                <div class="chat-body">
-                  <div class="chats-text-cont"></div>
-                </div>
-          
-                <div class="chat-inp">
-                  <div class="chat_input_left">
+            </div>
+
+            <div class="chat-body">
+                <div class="chats-text-cont"></div>
+            </div>
+
+            <div class="chat-inp">
+                <div class="chat_input_left">
                     <div class="emoji"></div>
-          
+
                     <div class="chat-input">
-                      <div class="input" contenteditable="true"></div>
+                        <div class="input" contenteditable="true"></div>
                     </div>
-                  </div>
-                  <div class="chat_input_right">
-                    <div class="opts">
-                      <a class="send"></a>
-                    </div>
-                  </div>
                 </div>
-          
-                <div class="emoji-dashboard">
-                  <!-- <ul class="emojis">
+                <div class="chat_input_right">
+                    <div class="opts">
+                        <a class="send"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="emoji-dashboard">
+                <ul class="emojis">
                     <li class="emoji" data-clipboard-text="--1">
                       <i class="em em---1"></i>
                     </li>
@@ -257,10 +259,11 @@
                       <i class="em em-atm"></i>
                     </li>
                     <li class="emoji" data-clipboard-text="b"><i class="em em-b"></i></li>
-                  </ul> -->
-                </div>
-              </div>
+                  </ul>
+            </div>
         </div>
-        <script src="script.js"></script>
-    </body>
+    </div>
+    <script src="script.js"></script>
+</body>
+
 </html>
